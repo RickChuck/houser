@@ -1,15 +1,10 @@
 import React, { Component } from 'react'
-import logo from '../../assets/house_logo.png'
 import axios from 'axios'
-import './Wizard.css'
-import step_active from '../../assets/step_active.png'
-import step_inactive from '../../assets/step_inactive.png'
-import step_complete from '../../assets/step_completed.png'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { stepThree } from '../../reducers/newPropertyReducer'
+// import { stepThree } from '../../reducers/newPropertyReducer'
 
-class V3 extends Component {
+class Wizard3 extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -47,7 +42,6 @@ class V3 extends Component {
       <div id='wizard-page'>
         <nav id='wizard-nav'>
           <section id='wizard-title'>
-            <img src={logo} width='25px' alt='' />
             <h1 className='wizard-nav-text'>Houser</h1>
             <p className='wizard-nav-text'>Wizard</p>
           </section>
@@ -61,27 +55,7 @@ class V3 extends Component {
             </Link>
           </div>
           <div id='wizard-mid-2'>
-            <p style={{ marginBottom: '25px' }}>Step 3</p>
-            <div id='wizard-steps' style={{ marginBottom: '25px' }}>
-              <img src={step_complete} alt='' />
-              <img src={step_complete} alt='' />
-              <img src={step_active} alt='' />
-              <img src={step_inactive} alt='' />
-              <img src={step_inactive} alt='' />
-            </div>
-            <div id='wizard-forum'>
-              {this.state.uploadedImage ?
-                <div>
-                  <img src={this.state.propertyImage} id='wizard-image-preview' />
-                </div>
-                :
-                <div id='wizard-image-preview'>
-                  <p style={{ color: 'grey' }}>Preview</p>
-                </div>
-              }
-              <h3 style={{ marginBottom: '5px', marginLeft: '15px' }}>Image Upload</h3>
-              <input type='file' onChange={this.handleChange} className='wizard-forum-input' style={{ height: '25px', border: 'none' }} />
-            </div>
+            <p>Step 3</p>
             <div id='wizard-step-buttons'>
               <Link to='/wizard/v2'>
                 <button className='wizard-step-button' style={{ width: '155px' }}>Previous Step</button>
@@ -103,4 +77,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, { stepThree })(V3)
+export default connect(mapStateToProps)(Wizard3)

@@ -23,11 +23,17 @@
     "eject": "react-scripts eject"
   },
   "main": "./server.js",
-  "proxy": "http://localhost:3005",
+  "proxy": "http://localhost:3555",
   "nodemonConfig": {
     "ignore": [
       "src/*"
     ],
     "ext": "js,json,sql"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

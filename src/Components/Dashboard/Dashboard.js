@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-import './Dashboard.css'
-import logo from '../../assets/house_logo.png'
 import axios from 'axios'
-import deleteIcon from '../../assets/delete_icon.png'
 import { Link } from 'react-router-dom'
 
 export default class Dashboard extends Component {
@@ -72,14 +69,6 @@ export default class Dashboard extends Component {
             </section>
           </div>
           <hr id='hr-seperator' />
-          <div id='dashboard-house-details-container-right'>
-            <p id='loan-text'>Loan: ${e.property_loan_amount}</p>
-            <p className='house-details'>Monthly Mortgage: ${e.property_monthly_mortgage}</p>
-            <p className='house-details'>Desired Rent: ${e.property_desired_rent}</p>
-            <p className='house-details'>Address: {e.property_address}</p>
-            <p className='house-details'>City: {e.property_city}</p>
-          </div>
-          <img style={{ cursor: 'pointer' }} src={deleteIcon} alt='' width='10px' height='12px' id='delete-icon' onClick={() => this.deleteProperty(e.property_id)} />
         </div>
       )
     })
@@ -88,7 +77,6 @@ export default class Dashboard extends Component {
       <div id='dashboard-page'>
         <nav id='dashboard-nav'>
           <section id='dashboard-title'>
-            <img src={logo} width='25px' alt='' />
             <h1 className='dashboard-nav-text'>Houser</h1>
             <p className='dashboard-nav-text'>Dashboard</p>
           </section>

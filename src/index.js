@@ -4,10 +4,10 @@ import App from './Components/App/App';
 import './reset.css'
 import { HashRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import store from './store'
+import routes from './routes'
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider routes={routes}>
     <HashRouter>
       <App />
     </HashRouter>
