@@ -1,0 +1,154 @@
+#wizard-page {
+  background-color: #AFD4C0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#wizard-nav {
+  background-color: #519872;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding-right: 26%;
+  padding-left: 27%;
+}
+
+#wizard-title {
+  width: 171px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+
+.wizard-nav-text {
+  font-size: 20px;
+}
+
+#wizard-mid {
+  background-color: #E3F7ED;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+#wizard-mid-1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+}
+
+#cancel-button {
+  background-color: #FEC2C2;
+  font-weight: 800;
+  border: none;
+  width: 58px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#wizard-mid-2 {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#wizard-steps {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#wizard-forum {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.wizard-forum-input {
+  width: 100%;
+  border: #519872 solid 1px;
+}
+
+.wizard-step-button {
+  background-color: #3b5249;
+  font-weight: 800;
+  border: none;
+  width: 115px;
+  height: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+#wizard-forum2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+#wizard-state-forum {
+  position: relative;
+  right: 50px;
+}
+
+#wizard-step-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#wizard-image-preview {
+  width: 100%;
+  height: 300px;
+  background-color: lightgrey;
+  border: #519872 solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#wizard-recommended-rent {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#wizard-complete-button {
+  background-color: #8aea92;
+  font-weight: 800;
+  border: none;
+  width: 115px;
+  height: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+}
